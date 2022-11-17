@@ -16,6 +16,7 @@ int main(void) {
             scanf("%d", &M[i][j]);
         }
     }
+    //从此开始难以理解
     for (j = 0; j < n - m + 1; j++) {
         for (i = 0; i < n - m + 1; i++) {
             //判断
