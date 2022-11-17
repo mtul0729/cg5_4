@@ -20,17 +20,18 @@ int main(void) {
     for (j = 0; j < n - m + 1; j++) {
         for (i = 0; i < n - m + 1; i++) {
             //判断
-            flag = 0;
+            flag = 1;
             for (k = 0; k < m; k++) {
                 for (t = 0; t < m; t++) {
-                    if (N[k + i][t + j] == M[k][t]) {
-                        flag = 1;
+                    if (N[k + i][t + j] != M[k][t]) {
+                        flag = 0;
                         break;
                     }
                 }
-                if (flag == 1)break;
             }
+            if (flag == 1)break;
         }
+        if (flag == 1)break;
     }
     if (flag == 1)printf("%d,%d", i, j);
     else printf("-1");
