@@ -30,7 +30,7 @@ int main(void) {
                 if (flag == 1)break;
             }
             if(flag == 0){
-                printf("%d,%d", i, j);
+                printf("%d,%d", i+1, j+1);
                 return 0;
             }
         }
