@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(void){
-  int n,m,i,j,k,t,flag;
+  int n,m,i,j,k,t,flag=1;
   scanf("%d",&n);
   int N[n][n];
   for(i = 0;i<n;i++){
@@ -21,7 +21,6 @@ int main(void){
         for (i=0;i<n-m+1;i++)
         {
             //判断
-            flag = 1;
             for (k=0;k<m;k++){
                 for(t=0;t<m;t++){
                     if(N[k+i][t+j] != M[k][t]){
@@ -33,7 +32,7 @@ int main(void){
             }
         }
     }
-    if(flag==1)printf("%d %d",i,j);
+    if(flag==1)printf("%d,%d",i,j);
     else printf("-1");
     return 0;
 }
