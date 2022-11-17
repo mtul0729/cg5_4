@@ -11,12 +11,11 @@ int main(void) {
     }
     scanf("%d", &m);
     int M[m][m];
-    for (i = 0; i < n; i++) {
-        for (j = 0; j < n; j++) {
+    for (i = 0; i < m; i++) {
+        for (j = 0; j < m; j++) {
             scanf("%d", &M[i][j]);
         }
     }
-    //输入完成
     for (j = 0; j < n - m + 1; j++) {
         for (i = 0; i < n - m + 1; i++) {
             //判断
